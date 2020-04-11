@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Registration page
+        style
+            include ../stylesheets/loginPageCss.css
+    body
+        form(action="/register", method="post", id="formRegistration")
+            p
+                h2 Registration
+            p
+                input(id="txtEmail" name="txtEmail" type="email" placeholder="Email")
+                input(id="txtPassword" name="txtPassword" type="password" placeholder="Password")
+            p
+                button(id="btnRegister" type="submit" class="button-register") Registration

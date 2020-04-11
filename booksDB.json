@@ -1,0 +1,26 @@
+{
+  "b3a0de5e-678b-426f-9558-85676834143d": {
+    "name": "Book4",
+    "dateOfWritten": "2020-04-16",
+    "author": "Author4",
+    "owner": "e94c447c-886e-416e-8b85-14fd65d03435",
+    "sended": "none",
+    "id": "b3a0de5e-678b-426f-9558-85676834143d"
+  },
+  "a4e737a6-dec9-4067-9624-896cd4928ed4": {
+    "name": "Book1",
+    "author": "Author1",
+    "dateOfWritten": "2020-04-28",
+    "owner": "e94c447c-886e-416e-8b85-14fd65d03435",
+    "sended": "none",
+    "id": "a4e737a6-dec9-4067-9624-896cd4928ed4"
+  },
+  "773c6027-83a1-4562-b90e-c6a5a8e77c15": {
+    "name": "Book2",
+    "dateOfWritten": "2020-04-29",
+    "author": "Author2",
+    "owner": "e94c447c-886e-416e-8b85-14fd65d03435",
+    "sended": "none",
+    "id": "773c6027-83a1-4562-b90e-c6a5a8e77c15"
+  }
+}

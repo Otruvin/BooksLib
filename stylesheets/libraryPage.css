@@ -1,0 +1,58 @@
+body
+{
+    background-color: rgb(157, 216, 240);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    text-align: center;
+}
+form
+{
+    margin-top: 2%;
+    margin-right: 5%;
+    float: right;
+    height: 5vh;
+    width: 10%;
+}
+.formbtn
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    background-color: rgb(252, 173, 56);
+    border-radius: 50px;
+}
+#userInfo
+{
+    margin-left: 2%;
+    margin-top: 2%;
+    float: left;
+    font-size: 2vw;
+    color: white;
+}
+#hed
+{
+    height: 7%;
+}
+.book
+{
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 10%;
+    border: white solid 5px;
+    border-radius: 50px;
+    background-color: rgb(252, 173, 56);
+}
+#addBook
+{
+    height: 120px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}

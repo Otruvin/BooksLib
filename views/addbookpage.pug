@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Add Book
+        style
+            include ../stylesheets/loginPageCss.css
+    body
+        h1 Add book
+        form(action="/addbook", method="post")
+            label(for="dateToBack") Date of written
+            input(id="dateOfWritten" name="dateOfWritten" type="date")
+            input(id="nameBook" name="nameBook" type="text" placeholder="Name of book")
+            input(id="author" name="author" type="text" placeholder="Author book")
+            p
+                button(id="btnLogin" type="submit" class="button-login") Add

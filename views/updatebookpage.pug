@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Update book
+        style
+            include ../stylesheets/loginPageCss.css
+    body
+        -var name = nameVal;
+        -var author = authorVal;
+        -var dateOfWritten = dateOfWrittenVal;
+        -var id = idVal;
+        h1 Update selected book
+        form(action="/saveUpdate" method="post")
+            p
+                label(for="name") Change name book
+                input(type="text" id="name" name="name" value=name)
+            p
+                label(for="author") Change author book
+                input(type="text" id="author" name="author" value=author)
+            p
+                label(for="dateOfWritten") Change date of written
+                input(type="date" id="dateOfWritten" name="dateOfWritten" value=dateOfWritten)
+            p
+                button(id="btnLogin" type="submit" class="button-login") Update
+        form(id="delform" action="/delBook", method="post")
+            input(type="hidden" id="id" name="id" value=id)
+            button(class="formbtn" id="btnDelete" type="submit") Delete

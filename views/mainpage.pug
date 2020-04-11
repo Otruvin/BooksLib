@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Main page
+        style
+            include ../stylesheets/mainPage.css
+    body
+        h1 Home Library
+        h2 Author: Ichyk AI-165
+        form(action="/login" method="get")
+            input(type="submit", value="Go login")
+        form(action="/register" method="get")
+            input(type="submit", value="Go registration")

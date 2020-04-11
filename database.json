@@ -1,0 +1,12 @@
+{
+  "41c08d5b-1d89-4286-9242-a44530b5054d": {
+    "email": "some@gmail.com",
+    "password": "$2b$10$GLT0O.y76wEZIdPHH34vruYFsBQfydSVMea90jbqV5C2xAB0ZmWJ2",
+    "id": "41c08d5b-1d89-4286-9242-a44530b5054d"
+  },
+  "e94c447c-886e-416e-8b85-14fd65d03435": {
+    "email": "some2@gmail.com",
+    "password": "$2b$10$azFt6ySG5iwUjnYEGXVlseq0Uy0gNRP8OLa8b.jw30jD/bDrxjGXC",
+    "id": "e94c447c-886e-416e-8b85-14fd65d03435"
+  }
+}

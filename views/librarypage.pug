@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Library page
+        style
+            include ../stylesheets/libraryPage.css
+    body
+        - var email = emailVal;
+        - var books = booksVal;
+        h1(id="userInfo") User logged: #{email}
+        form(id="logoutform" action="/logout?_method=DELETE", method="post")
+            button(class="formbtn" id="logout_btn" type="submit") log out
+        form(id="addbookform" action="/addbook", method="get")
+            button(class="formbtn" id="logout_btn" type="submit") Add book
+        p(id="hed") 
+            if books
+                each book in books
+                    div(class="book")
+                        div(class="inform" style="height: 100%; width: 50%; float: left; border-radius: 50px;")
+                            h3 Author: #{book.author}
+                            h3 Name: #{book.name}
+                            h3 Date of written: #{book.dateOfWritten}
+                        div(class="func" style="height: 100%; width: 50%; float: left; border-radius: 50px;")
+                            form(id="updatebtnForm" action="/updateBook" style="height: 30%; width: 60%" method="post")
+                                input(type="hidden" id="name" name="name" value=book.name)
+                                input(type="hidden" id="author" name="author" value=book.author)
+                                input(type="hidden" id="dateOfWritten" name="dateOfWritten" value=book.dateOfWritten)
+                                input(type="hidden" id="id" name="id" value=book.id)
+                                button(class="formbtn" id="logout_btn" type="submit" style="background-color: rgb(157, 216, 240);") Update
+                            form(id="takebtnForm" action="/takebook" style="height: 30%; width: 60%" method="post")
+                                input(type="hidden" id="name" name="name" value=book.name)
+                                input(type="hidden" id="author" name="author" value=book.author)
+                                input(type="hidden" id="dateOfWritten" name="dateOfWritten" value=book.dateOfWritten)
+                                input(type="hidden" id="id" name="id" value=book.id)
+                                input(type="hidden" id="sended" name="sended" value=book.sended)
+                                button(class="formbtn" id="logout_btn" type="submit" style="background-color: rgb(157, 216, 240);") Take

@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Login page
+        style
+            include ../stylesheets/loginPageCss.css
+    body
+        if messages.error
+            - var message = messages.error 
+            p(id="errorMessage") #{message}
+        h1 Welcome in home library
+        h1 You on login screen
+        form(action="/login", method="post")
+            p
+                h2 Authentication
+            p
+                input(id="email" name="email" type="email" placeholder="Email")
+                input(id="password" name="password" type="password" placeholder="Password")
+            p
+                button(id="btnLogin" type="submit" class="button-login") Log in

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Take book
+        style
+            include ../stylesheets/loginPageCss.css
+    body
+        -var name = nameVal;
+        -var author = authorVal;
+        -var dateOfWritten = dateOfWrittenVal;
+        -var id = idVal;
+        -var sended = sendedVal;
+        -var datenow = datenowVal;
+        h1 Take book
+        if sended === "none"
+            form(id="formtake" action="/takebooksave", method="post")
+                label(for="sended") Date to back
+                input(type="date", name="sended" id="sended")
+                input(type="hidden" name="name" id="name" value=name)
+                input(type="hidden" name="author" id="author" value=author)
+                input(type="hidden" name="dateOfWritten" id="dateOfWritten" value=dateOfWritten)
+                input(type="hidden" name="id" id="id" value=id)
+                p
+                    button(id="btnLogin" type="submit" class="button-login") Take
+        else
+            form(id="formback" action="/takebookback", method="post")
+                h2 Date now: #{datenow}
+                h2 Date to back: #{sended}
+                input(type="hidden", name="sended" id="sended" value="none")
+                input(type="hidden" name="name" id="name" value=name)
+                input(type="hidden" name="author" id="author" value=author)
+                input(type="hidden" name="dateOfWritten" id="dateOfWritten" value=dateOfWritten)
+                input(type="hidden" name="id" id="id" value=id)
+                p
+                    button(id="btnLogin" type="submit" class="button-login" style="background-color: green; color: white;") Back
